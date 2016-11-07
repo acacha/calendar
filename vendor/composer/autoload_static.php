@@ -61,6 +61,10 @@ class ComposerStaticInit9fc9ee29caa7ea42697ea8540df383e7
         array (
             'Illuminate\\' => 11,
         ),
+        'F' => 
+        array (
+            'Faker\\' => 6,
+        ),
         'D' => 
         array (
             'Dotenv\\' => 7,
@@ -164,6 +168,10 @@ class ComposerStaticInit9fc9ee29caa7ea42697ea8540df383e7
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
+        ),
+        'Faker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
         'Dotenv\\' => 
         array (

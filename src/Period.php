@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Period.
- * 
+ *
  * @package Acacha\Periods
  */
 class Period extends Model
