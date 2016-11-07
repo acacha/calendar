@@ -12,10 +12,10 @@ use Acacha\Periods\Period;
 trait HasPeriods
 {
     /**
-     * The periods that belongs to the model.
+     *  The periods that belongs to the model.
      */
     public function periods()
     {
-        return $this->belongsToMany(Period::class);
+        return $this->morphMany(Period::class, 'periodable');
     }
 }
