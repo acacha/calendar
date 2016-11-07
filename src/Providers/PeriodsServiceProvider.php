@@ -1,5 +1,7 @@
 <?php
 
+namespace Acacha\Periods\Providers;
+
 use Acacha\Periods\AcachaPeriods;
 use Illuminate\Support\ServiceProvider;
 
