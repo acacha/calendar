@@ -1,0 +1,18 @@
+{
+    "name": "acacha/periods",
+    "description": "Laravel package to manage periods of time",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergi Tur Badenas",
+            "email": "sergiturbadenas@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Acacha\\Periods\\": "src"}
+    }
+}
