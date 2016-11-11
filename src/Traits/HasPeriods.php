@@ -16,6 +16,6 @@ trait HasPeriods
      */
     public function periods()
     {
-        return $this->morphMany(Period::class, 'periodable');
+        return $this->morphToMany(Period::class, 'periodable');
     }
 }

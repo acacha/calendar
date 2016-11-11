@@ -40,8 +40,8 @@ class PeriodsServiceProvider extends ServiceProvider
         $this->publishes(
             AcachaPeriods::configs(),"acacha_periods"
         );
-        $this->mergeConfigFrom(
-            ACACHA_PERIODS_PATH . '/config/periods.php', 'acacha_periods'
-        );
+//        $this->mergeConfigFrom(
+//            ACACHA_PERIODS_PATH . '/config/periods.php', 'acacha_periods'
+//        );
     }
 }

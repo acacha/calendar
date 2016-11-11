@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePeriodsTable extends Migration
+class CreateCalendarsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,13 @@ class CreatePeriodsTable extends Migration
      */
     public function up()
     {
-        Schema::create('periods', function (Blueprint $table) {
+        Schema::create('calendars', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->integer('period_id')->unsigned();
             $table->timestamps();
         });
 
-        Schema::create('periodables', function (Blueprint $table) {
-            $table->integer('period_id')->unsigned();
-            $table->morphs('periodable');
-            $table->timestamps();
-        });
     }
 
     /**
@@ -33,6 +29,6 @@ class CreatePeriodsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('periods');
+        Schema::dropIfExists('calendars');
     }
 }

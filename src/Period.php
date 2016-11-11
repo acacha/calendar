@@ -2,6 +2,7 @@
 
 namespace Acacha\Periods;
 
+use Acacha\Periods\Traits\HasCalendar;
 use Acacha\Periods\Traits\IsPeriodable;
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,5 +13,15 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Period extends Model
 {
-    use IsPeriodable;
+    use HasCalendar;
+
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = [
+        'start_date',
+        'finish_date'
+    ];
 }
